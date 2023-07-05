@@ -1,0 +1,21 @@
+
+
+
+
+
+async function main() {
+
+  const info = await transporter.sendMail({
+    from: "foo@example.com",
+    to: "andrea.robulescu@yahoo.com", 
+    subject: "Abonare newspaper BestTable",
+    html: "  
+<h1 style="text-align: center; color: #333;">Buna ziua!</h1>
+        <p style="text-align: center; font-size: 18px; color: #666;">Acest email reprezinta confirmarea abonarii dumneavoastra la newspaper-ul BestTable!</p>
+        <p style="text-align: center; font-size: 18px; color: #666;">Va vom tine la curent cu noutatile aparute in cadrul aplicatiei pe care o punem la dispozitia dumneavoastra!</p>
+        <p style="text-align: center; font-size: 18px; color: #666;">Va multumim,</p>
+        <p style="text-align: center; font-size: 18px; color: #666;">Echipa BestTable</p>
+    </div>",
+  });
+
+}
